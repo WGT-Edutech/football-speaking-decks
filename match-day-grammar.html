@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; media-src 'self' blob:; object-src 'none'; frame-ancestors 'none'">
+<title>Match Day English — B1 Grammar Practice</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --accent: #22d3ee;
+  --accent-rgb: 34,211,238;
+  --accent2: #a78bfa;
+  --bg-deep: #0a1228;
+  --bg-deep-rgb: 10,18,40;
+  --bg-overlay-from: rgba(10,18,40,0.88);
+  --bg-overlay-mid: rgba(10,18,40,0.62);
+  --bg-overlay-to: rgba(10,18,40,0.28);
+  --text: #e2e8f0;
+  --text-dim: rgba(255,255,255,0.75);
+  --success: #34d399;
+  --warning: #fbbf24;
+  --error: #f87171;
+  --vocab-b2: #a3e635;
+  --vocab-c1: #f472b6;
+  --glow: 0 0 25px rgba(var(--accent-rgb),.22), 0 0 60px rgba(var(--accent-rgb),.08);
+  --bg-image-0: url('https://images.pexels.com/photos/35898730/pexels-photo-35898730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --bg-image-1: url('https://images.pexels.com/photos/6412253/pexels-photo-6412253.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --bg-image-2: url('https://images.pexels.com/photos/30726643/pexels-photo-30726643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --bg-image-3: url('https://images.pexels.com/photos/8941652/pexels-photo-8941652.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --bg-image-4: url('https://images.pexels.com/photos/34304359/pexels-photo-34304359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --bg-image-5: url('https://images.pexels.com/photos/34485310/pexels-photo-34485310.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --bg-image-6: url('https://images.pexels.com/photos/17922517/pexels-photo-17922517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --bg-image-7: url('https://images.pexels.com/photos/395082/pexels-photo-395082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --bg-image-8: url('https://images.pexels.com/photos/32101180/pexels-photo-32101180.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --bg-image-9: url('https://images.pexels.com/photos/39222212/pexels-photo-39222212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --bg-image-10: url('https://images.pexels.com/photos/12074795/pexels-photo-12074795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --bg-image-11: url('https://images.pexels.com/photos/32366610/pexels-photo-32366610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --bg-image-12: url('https://images.pexels.com/photos/4623974/pexels-photo-4623974.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 28px; zoom: 0.67; }
+html, body { height: 100%; overflow: hidden; background: var(--bg-deep); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.75; }
+
+/* NOISE OVERLAY */
+body::after { content: ''; position: fixed; inset: 0; z-index: 9999; pointer-events: none; opacity: .035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-repeat: repeat; background-size: 128px 128px; }
+
+.texture-bg { position: fixed; inset: 0; z-index: -1; pointer-events: none; background: var(--bg-deep); }
+.texture-bg::before { content: ''; position: absolute; inset: -50%; background: radial-gradient(ellipse at 20% 20%, rgba(var(--accent-rgb),0.10) 0%, transparent 50%), radial-gradient(ellipse at 80% 80%, rgba(var(--accent2),0.06) 0%, transparent 50%), radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.02) 0%, transparent 70%); filter: blur(40px); opacity: .6; animation: bg-drift 20s ease-in-out infinite alternate; }
+.texture-bg::after { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,.015) 2px, rgba(255,255,255,.015) 4px), repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(255,255,255,.01) 2px, rgba(255,255,255,.01) 4px); opacity: .8; }
+@keyframes bg-drift { 0% { transform: translate(0,0) scale(1); } 50% { transform: translate(-3%,2%) scale(1.05); } 100% { transform: translate(2%,-3%) scale(1.02); } }
+
+/* SLIDES */
+.slide { position: fixed; inset: 0; background-size: cover; background-position: center; opacity: 0; pointer-events: none; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 10vh 3vw 20vh; overflow-y: auto; scrollbar-width: none; -ms-overflow-style: none; z-index: 0; }
+.slide::-webkit-scrollbar { width: 0; background: transparent; }
+.slide.active { opacity: 1; pointer-events: auto; z-index: 2; }
+.slide:not(.active) * { visibility: hidden !important; }
+
+/* CONTENT */
+.content { position: relative; z-index: 1; width: min(94vw, 1400px); max-width: 94vw; background: rgba(var(--bg-deep-rgb),.90); border: 1px solid rgba(var(--accent-rgb),.55); border-left: 3px solid var(--accent); box-shadow: var(--glow); border-radius: 16px; padding: 2em 2.5em; backdrop-filter: blur(10px); margin: 0 0 10vh 0; }
+@media (min-width: 1600px) { .content { max-width: 90vw; width: min(90vw, 1600px); } }
+@media (max-width: 768px) { .content { max-width: 96vw; padding: 1.4em 1.6em; } }
+
+/* PROGRESS */
+.progress-bar { position: fixed; top: 0; left: 0; height: 4px; background: linear-gradient(90deg, var(--accent), var(--accent2)); box-shadow: 0 0 8px rgba(var(--accent-rgb),.5); z-index: 200; transition: width .35s ease; }
+
+/* NAV */
+.nav { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 1.2em; z-index: 200; background: rgba(var(--bg-deep-rgb),.88); border: 1px solid rgba(var(--accent-rgb),.50); border-radius: 40px; padding: 10px 24px; backdrop-filter: blur(8px); pointer-events: auto; }
+.nav button { background: rgba(var(--bg-deep-rgb),.82); border: 1px solid rgba(var(--accent-rgb),.70); color: var(--accent); font-family: 'Inter', sans-serif; font-size: 0.9rem; padding: 8px 18px; border-radius: 24px; cursor: pointer; transition: all .2s; min-width: 44px; min-height: 44px; font-weight: 600; }
+.nav button:hover { background: rgba(var(--bg-deep-rgb),.65); box-shadow: 0 0 15px rgba(var(--accent-rgb),.3); transform: translateY(-2px); }
+.nav button:active { transform: translateY(1px) scale(.96); }
+.nav .slide-counter { font-variant-numeric: tabular-nums; color: var(--text-dim); font-size: .8rem; min-width: 60px; text-align: center; }
+
+/* TOP BAR: home, theme, sound */
+.top-bar { position: fixed; top: 16px; left: 16px; right: 16px; z-index: 210; display: flex; justify-content: space-between; align-items: center; pointer-events: none; gap: 1em; }
+.top-bar > * { pointer-events: auto; }
+.home-link { display: inline-flex; align-items: center; gap: 6px; background: rgba(var(--bg-deep-rgb),.82); border: 1px solid rgba(var(--accent-rgb),.60); color: var(--accent); font-size: .7rem; font-weight: 600; padding: 10px 16px; border-radius: 20px; text-decoration: none; transition: all .2s; }
+.home-link:hover { background: rgba(var(--bg-deep-rgb),.65); box-shadow: 0 0 12px rgba(var(--accent-rgb),.3); }
+.top-controls { display: flex; gap: .5em; }
+.theme-cycle, .sound-toggle { display: inline-flex; align-items: center; gap: 6px; background: rgba(var(--bg-deep-rgb),.82); border: 1px solid rgba(var(--accent-rgb),.60); color: var(--accent); font-family: 'Inter', sans-serif; font-size: .7rem; font-weight: 600; padding: 10px 16px; border-radius: 20px; cursor: pointer; transition: all .2s; }
+.theme-cycle:hover, .sound-toggle:hover { background: rgba(var(--bg-deep-rgb),.65); box-shadow: 0 0 12px rgba(var(--accent-rgb),.3); }
+.theme-cycle .theme-name { min-width: 70px; text-align: center; }
+.theme-dot-preview { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 2px solid rgba(255,255,255,.3); }
+.sound-toggle.off { opacity: .6; border-style: dashed; }
+
+/* TYPOGRAPHY */
+h1 { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: clamp(2.4rem, 6vw, 4.6rem); background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 25px rgba(var(--accent-rgb),.55)); margin-bottom: .5em; line-height: 1.15; }
+h2 { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: clamp(1.5rem, 3.5vw, 2.6rem); color: #ffffff; text-transform: uppercase; letter-spacing: .04em; margin-bottom: .7em; text-shadow: 0 0 16px rgba(var(--accent-rgb),.45), 0 2px 6px rgba(0,0,0,.5); }
+h3 { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: clamp(1.2rem, 2.6vw, 1.8rem); color: #ffffff; margin: 1em 0 .5em; text-shadow: 0 0 10px rgba(var(--accent2),.35), 0 1px 4px rgba(0,0,0,.4); }
+p, li { margin-bottom: .5em; font-size: clamp(1.05rem, 1.5vw, 1.35rem); color: #ffffff; text-shadow: 0 1px 3px rgba(0,0,0,.5); }
+.subtitle { font-size: clamp(1.15rem, 2.6vw, 1.7rem); color: #e2e8f0; margin-top: -.3em; text-shadow: 0 1px 4px rgba(0,0,0,.5); }
+
+/* BADGES */
+.level-badge, .section-badge { display: inline-block; font-size: .6rem; font-weight: 800; padding: 3px 10px; border-radius: 8px; letter-spacing: .08em; margin-right: 8px; vertical-align: middle; }
+.level-c1 { background: rgba(244,114,182,.15); color: var(--vocab-c1); border: 1px solid rgba(244,114,182,.4); }
+.section-badge { margin-bottom: .6em; }
+.badge-success { background: rgba(52,211,153,.15); color: var(--success); border: 1px solid rgba(52,211,153,.4); }
+.badge-accent2 { background: rgba(167,139,250,.15); color: var(--accent2); border: 1px solid rgba(167,139,250,.4); }
+.badge-accent { background: rgba(var(--accent-rgb),.15); color: var(--accent); border: 1px solid rgba(var(--accent-rgb),.4); }
+.badge-warning { background: rgba(251,191,36,.15); color: var(--warning); border: 1px solid rgba(251,191,36,.4); }
+.badge-rose { background: rgba(244,114,182,.15); color: var(--vocab-c1); border: 1px solid rgba(244,114,182,.4); }
+
+/* QUESTION CARDS */
+.question-card { background: none; border: none; border-left: 2px solid var(--accent); border-radius: 0; padding: 0 0 0 1.2em; margin: 1em 0; }
+.question-card .question-text { font-weight: 700; color: #ffffff; margin-bottom: .4em; font-size: clamp(1.1rem, 1.6vw, 1.4rem); text-shadow: 0 1px 3px rgba(0,0,0,.5); }
+.follow-ups { font-size: clamp(0.95rem, 1.3vw, 1.1rem); color: #f1f5f9; font-style: italic; margin-top: .4em; padding-left: 1em; border-left: 2px solid rgba(var(--accent-rgb),.3); text-shadow: 0 1px 3px rgba(0,0,0,.4); }
+
+/* VOCAB */
+.vocab-word { position: relative; cursor: pointer; transition: color .2s; background: transparent; border: none; padding: 0; margin: 0; font-weight: 600; }
+.vocab-word.level-b2 { color: var(--vocab-b2); border-bottom: 2px dotted var(--vocab-b2); }
+.vocab-word.level-c1 { color: var(--vocab-c1); border-bottom: 2px dotted var(--vocab-c1); }
+.vocab-word:hover::before { content: 'Click for definition'; position: absolute; bottom: calc(100% + 4px); left: 50%; transform: translateX(-50%); background: var(--bg-deep); border: 1px solid var(--accent); border-radius: 6px; padding: .25em .5em; font-size: .6rem; color: var(--accent); white-space: nowrap; z-index: 99; pointer-events: none; opacity: 1; }
+.vocab-tooltip { display: none; position: fixed; bottom: auto; top: auto; left: 50%; transform: translateX(-50%); background: var(--bg-deep); border: 1px solid var(--accent); border-radius: 10px; padding: .5em .8em; min-width: 220px; max-width: min(320px, 80vw); z-index: 1000; box-shadow: 0 0 15px rgba(var(--accent-rgb),.3); }
+.vocab-tooltip .level-badge { margin-bottom: .3em; }
+.vocab-tooltip .def-text { font-size: .75rem; color: var(--text); line-height: 1.5; }
+.vocab-tooltip .example-text { font-size: .7rem; color: var(--text-dim); margin-top: .4em; font-style: italic; }
+.vocab-tooltip::after { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 6px solid transparent; border-top-color: var(--accent); }
+.vocab-word.active .vocab-tooltip { display: block; }
+
+/* MODEL ANSWER */
+.model-answer { background: rgba(52,211,153,.08); border: 1px solid rgba(52,211,153,.35); border-radius: 10px; padding: 1em 1.4em; margin: .8em 0; }
+.model-answer .answer-label { font-size: .65rem; color: var(--success); font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-bottom: .5em; }
+.model-answer .answer-text { color: #ffffff; line-height: 1.8; font-size: clamp(0.95rem, 1.3vw, 1.15rem); text-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.model-answer.hidden-answer { display: none; }
+
+/* REVEAL BUTTON */
+.reveal-btn { display: inline-block; margin-top: .8em; background: rgba(var(--bg-deep-rgb),.82); border: 1px solid rgba(52,211,153,.70); color: var(--success); font-family: 'Inter', sans-serif; font-size: clamp(0.85rem, 1.2vw, 1rem); padding: 12px 28px; border-radius: 24px; cursor: pointer; transition: all .2s; min-width: 44px; min-height: 44px; font-weight: 600; }
+.reveal-btn:hover { background: rgba(var(--bg-deep-rgb),.65); box-shadow: 0 0 15px rgba(52,211,153,.3); transform: translateY(-2px); }
+.reveal-btn:active { transform: translateY(1px) scale(.96); }
+.reveal-btn.revealed { background: var(--bg-deep); border-color: rgba(168,224,99,.9); box-shadow: 0 0 20px rgba(168,224,99,.4); }
+
+/* CUE CARD */
+.cue-card { background: rgba(var(--accent-rgb),.08); border: 1.5px solid rgba(var(--accent-rgb),.35); border-radius: 14px; padding: 1.2em 1.8em; margin: 1em 0; }
+.cue-card h4 { font-family: 'Oswald', sans-serif; font-weight: 600; color: #ffffff; margin-bottom: .6em; font-size: clamp(1.2rem, 2.2vw, 1.5rem); text-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.cue-card ul { list-style: none; padding: 0; }
+.cue-card li { color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,.4); padding: .35em 0 .35em 1.4em; position: relative; line-height: 1.55; }
+.cue-card li::before { content: '>'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+
+/* TIMERS */
+.timer-panel { display: flex; align-items: center; gap: .8em; margin: .8em 0; flex-wrap: wrap; }
+.timer-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(248,113,113,.1); border: 1px solid rgba(248,113,113,.3); color: var(--error); font-size: .8rem; padding: 6px 12px; border-radius: 12px; font-weight: 600; cursor: pointer; transition: all .2s; }
+.timer-badge:hover { background: rgba(248,113,113,.2); box-shadow: 0 0 10px rgba(248,113,113,.3); }
+.timer-badge.running { background: rgba(52,211,153,.1); border-color: rgba(52,211,153,.4); color: var(--success); }
+.timer-badge.warning { background: rgba(251,191,36,.1); border-color: rgba(251,191,36,.4); color: var(--warning); }
+.timer-badge.danger { animation: pulse .5s ease-in-out infinite; }
+.timer-label { font-size: .7rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: .05em; }
+.timer-btn { background: rgba(var(--bg-deep-rgb),.82); border: 1px solid rgba(var(--accent-rgb),.60); color: var(--accent); font-size: .7rem; padding: 6px 12px; border-radius: 10px; cursor: pointer; transition: all .2s; min-height: 36px; }
+.timer-btn:hover { background: var(--bg-deep); }
+
+/* PART IMAGE */
+.part-image { width: 100%; height: 160px; object-fit: cover; border-radius: 12px; margin-bottom: 1em; display: block; border: 1px solid rgba(var(--accent-rgb),.25); }
+@media (max-width: 768px) { .part-image { height: 110px; } }
+
+/* SUMMARY */
+.goals-list { list-style: none; padding: 0; }
+.goals-list li { color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,.4); padding: .4em 0 .4em 1.5em; position: relative; }
+.goals-list li::before { content: '>'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+.mark-complete-btn { margin-top: 1em; background: rgba(var(--bg-deep-rgb),.82); border: 1px solid rgba(52,211,153,.70); color: var(--success); font-size: .85rem; padding: 12px 28px; border-radius: 24px; cursor: pointer; transition: all .2s; font-weight: 600; }
+.mark-complete-btn:hover { background: rgba(var(--bg-deep-rgb),.65); box-shadow: 0 0 15px rgba(52,211,153,.3); }
+.mark-complete-btn.completed { background: var(--bg-deep); border-color: rgba(52,211,153,1); }
+
+/* START PROMPT */
+.start-prompt { color: var(--text-dim); font-size: .8rem; margin-top: 1em; animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: .6; } 50% { opacity: 1; } }
+
+
+/* Safe centring: flex-start + auto margins keeps the top of a tall slide
+   reachable. With justify-content:center the overflow goes off the top and
+   scrollTop=0 can never reveal it. */
+.slide { justify-content: flex-start; }
+.slide > .content { margin-top: auto !important; margin-bottom: auto !important; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  html { font-size: 30px; }
+  .content { max-width: 92vw; padding: 1.4em 1.6em; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.2rem; }
+  .nav { bottom: 12px; padding: 8px 16px; gap: .6em; }
+  .nav button { padding: 6px 12px; font-size: .75rem; }
+  .top-bar { top: 10px; left: 10px; right: 10px; }
+  .theme-cycle, .sound-toggle, .home-link { padding: 6px 10px; font-size: .6rem; }
+}
+.level-b1 { background: rgba(251,191,36,.15); color: var(--accent); border: 1px solid rgba(251,191,36,.4); }
+
+/* EXERCISES */
+.exercise { background: rgba(var(--bg-deep-rgb),.55); border: 1px solid rgba(var(--accent-rgb),.35); border-radius: 14px; padding: 1.2em 1.6em; margin: 1em 0; }
+.exercise h3 { margin: 0 0 .35em; font-size: clamp(1.15rem, 2.2vw, 1.6rem); text-transform: none; letter-spacing: 0; }
+.exercise .instr { color: var(--text-dim); font-size: .8rem; margin-bottom: 1em; }
+.q { margin: .7em 0; display: flex; align-items: baseline; gap: .6em; flex-wrap: wrap; }
+.q .num { display: inline-block; width: 1.6em; height: 1.6em; border-radius: 50%; background: rgba(var(--accent-rgb),.14); border: 1px solid rgba(var(--accent-rgb),.4); color: var(--accent); text-align: center; line-height: 1.6em; font-size: .75rem; font-weight: 700; flex: 0 0 auto; }
+.q select, .q input[type=text] { background: rgba(var(--bg-deep-rgb),.7); color: #ffffff; border: 1px solid rgba(var(--accent-rgb),.4); border-radius: 8px; padding: .5em .8em; font-size: .95rem; font-family: 'Inter', sans-serif; }
+.q select:focus, .q input[type=text]:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 10px rgba(var(--accent-rgb),.3); }
+.q select.correct, .q input.correct { border-color: var(--success); background: rgba(52,211,153,.12); }
+.q select.wrong, .q input.wrong { border-color: var(--error); background: rgba(248,113,113,.12); }
+.q .answer { display: none; margin-left: auto; font-size: .75rem; color: var(--success); font-weight: 600; }
+.q.revealed .answer { display: inline; }
+.q.revealed .num.good { background: var(--success); color: #000; border-color: var(--success); }
+.q.revealed .num.bad { background: var(--error); color: #000; border-color: var(--error); }
+.btn-row { display: flex; gap: .7em; margin-top: 1em; flex-wrap: wrap; align-items: center; }
+.btn-row .check { background: rgba(52,211,153,.14); border: 1px solid rgba(52,211,153,.6); color: var(--success); font-family: 'Inter', sans-serif; font-size: .85rem; padding: .6em 1.4em; border-radius: 12px; cursor: pointer; font-weight: 700; }
+.btn-row .check:hover { box-shadow: 0 0 15px rgba(52,211,153,.3); }
+.btn-row .reset { background: rgba(var(--bg-deep-rgb),.8); border: 1px solid rgba(var(--accent-rgb),.5); color: var(--accent); font-family: 'Inter', sans-serif; font-size: .85rem; padding: .6em 1.4em; border-radius: 12px; cursor: pointer; font-weight: 700; }
+.btn-row .reset:hover { box-shadow: 0 0 15px rgba(var(--accent-rgb),.3); }
+.score { margin-left: auto; font-weight: 800; color: var(--accent); font-size: .9rem; }
+/* B1 vocab words */
+.vocab-word.level-b1 { color: var(--accent); border-bottom: 2px dotted var(--accent); }
+/* CATEGORISE / SORT GAME */
+.sort-game-title { color: var(--text-dim); font-size: .8rem; margin: .9em 0 .5em; }
+.sort-game { display: flex; flex-wrap: wrap; gap: .5em; margin: .6em 0 .4em; }
+.sort-item { background: rgba(var(--bg-deep-rgb),.7); border: 1px dashed rgba(var(--accent-rgb),.55); border-radius: 10px; padding: .5em .9em; cursor: pointer; font-size: .9rem; color: #ffffff; transition: all .15s; min-width: 44px; min-height: 44px; }
+.sort-item:hover { border-style: solid; box-shadow: 0 0 10px rgba(var(--accent-rgb),.25); }
+.sort-item .pick-label { display: block; font-size: .7rem; color: var(--text-dim); margin-top: .35em; text-transform: uppercase; letter-spacing: .06em; }
+.sort-item.good { border: 1px solid var(--success); background: rgba(52,211,153,.14); }
+.sort-item.good .pick-label { color: var(--success); }
+.sort-item.bad { border: 1px solid var(--error); background: rgba(248,113,113,.14); }
+.sort-item.bad .pick-label { color: var(--error); }
+
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar" style="width: 7.69%;"></div>
+
+<div class="top-bar">
+  <a class="home-link" href="european-football-week.html">&larr; European Football This Week</a>
+  <div class="top-controls">
+    <button class="sound-toggle" id="soundToggleBtn" onclick="toggleSound()">Sound: ON</button>
+    <button class="theme-cycle" id="themeCycleBtn" onclick="cycleTheme()"><span class="theme-dot-preview"></span><span class="theme-name">Deep Ocean</span></button>
+  </div>
+</div>
+
+<!-- SLIDE 1 -->
+<section class="slide active" data-slide="0" style="background-image:var(--bg-image-0);">
+  <div class="content" style="text-align:center;">
+    <span class="level-badge level-b1">B1</span>
+    <h1>Match Day English</h1>
+    <p class="subtitle">Four grammar topics you need for your exam tomorrow</p>
+    <div class="cue-card" style="text-align:left;">
+      <h4>Tonight's training plan</h4>
+      <ul>
+        <li>Adjectives &mdash; describing players, matches and stadiums</li>
+        <li>Articles &mdash; a, an, the, or nothing at all</li>
+        <li>Will and going to &mdash; predictions, plans and promises</li>
+        <li>Present simple vs continuous &mdash; facts versus right now</li>
+      </ul>
+    </div>
+    <p class="start-prompt">Press &rarr; or Space to start</p>
+  </div>
+</section>
+<section class="slide" data-slide="1" style="background-image:var(--bg-image-1);">
+  <div class="content">
+    <span class="section-badge badge-accent">Game Plan</span>
+    <h2>How to use this deck</h2>
+    <p>Eight questions per topic. Answer first, then press <b>Check Answers</b>. Read every correction, then press <b>Reset</b> and try the whole set again from memory.</p>
+    <div class="cue-card">
+      <h4>Five exam tips</h4>
+      <ul>
+        <li>Read the whole sentence before you choose an answer.</li>
+        <li>Hunt for a time word: <em>always</em>, <em>now</em>, <em>tomorrow</em>, <em>at the moment</em>.</li>
+        <li>Decide the subject first &mdash; singular or plural decides the verb.</li>
+        <li>Say your answer out loud. The one that sounds natural usually is.</li>
+        <li>Do not change your first answer unless you can explain why.</li>
+      </ul>
+    </div>
+    <p style="font-size:.8rem;color:var(--text-dim);margin-top:.8em;">Topic order: Adjectives &rarr; Articles &rarr; Will / Going to &rarr; Present tenses &rarr; mixed exam practice.</p>
+  </div>
+</section>
+<section class="slide" data-slide="2" style="background-image:var(--bg-image-2);">
+  <div class="content">
+    <span class="section-badge badge-accent">Topic 1 of 4</span>
+    <h2>Adjectives</h2>
+    <p>An adjective describes a noun &mdash; a player, a match, a stadium. It normally sits <b>before</b> the noun, or <b>after</b> verbs like <em>be</em>, <em>look</em>, <em>feel</em>, <em>get</em>.</p>
+    <div class="cue-card">
+      <h4>Position</h4>
+      <ul>
+        <li>a <b>fast</b> striker &nbsp;&bull;&nbsp; a <b>brilliant</b> goal &nbsp;&bull;&nbsp; the <b>wet</b> pitch</li>
+        <li>The striker is <b>fast</b>. &nbsp;&bull;&nbsp; The match looks <b>brilliant</b>.</li>
+      </ul>
+    </div>
+    <div class="cue-card">
+      <h4>-ed and -ing</h4>
+      <ul>
+        <li><b>-ed</b> = how somebody feels: I was <b>exhausted</b> after the match.</li>
+        <li><b>-ing</b> = the thing that causes the feeling: The match was <b>exhausting</b>.</li>
+      </ul>
+    </div>
+    <div class="cue-card">
+      <h4>Comparing</h4>
+      <ul>
+        <li>Comparative: <b>-er</b> or <b>more</b> &rarr; He is <b>faster</b> than his teammate.</li>
+        <li>Superlative: <b>the -est</b> or <b>the most</b> &rarr; She is <b>the best</b> player in the league.</li>
+        <li>Irregular: <b>good &rarr; better &rarr; the best</b> &nbsp;|&nbsp; <b>bad &rarr; worse &rarr; the worst</b></li>
+        <li>Spelling: big &rarr; big<b>ger</b> &nbsp;|&nbsp; easy &rarr; <b>easier</b> &nbsp;|&nbsp; exciting &rarr; <b>more</b> exciting</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="slide" data-slide="3" style="background-image:var(--bg-image-3);">
+  <div class="content">
+    <span class="section-badge badge-accent">Exercise 1</span>
+    <div class="exercise">
+      <h3>Adjectives</h3>
+      <p class="instr">Choose or write the correct form.</p>
+        <div class="q" data-answer="tall">
+          <span class="num">1</span>
+          <span>Our goalkeeper is very <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="tall">tall</option><option value="tallly">tallly</option><option value="talling">talling</option></select></span>
+          <span class="answer">tall</span>
+        </div>
+        <div class="q" data-answer="exciting">
+          <span class="num">2</span>
+          <span>The second half was really <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="excited">excited</option><option value="exciting">exciting</option></select></span>
+          <span class="answer">exciting</span>
+        </div>
+        <div class="q" data-answer="thrilled">
+          <span class="num">3</span>
+          <span>I was <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="thrilled">thrilled</option><option value="thrilling">thrilling</option></select></span>
+          <span class="answer">thrilled</span>
+        </div>
+        <div class="q" data-answer="skillful">
+          <span class="num">4</span>
+          <span>He is a <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="skillful">skillful</option><option value="skillfully">skillfully</option></select></span>
+          <span class="answer">skillful</span>
+        </div>
+        <div class="q" data-answer="stronger">
+          <span class="num">5</span>
+          <span>Our captain is <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="strong">strong</option><option value="stronger">stronger</option><option value="strongest">strongest</option></select></span>
+          <span class="answer">stronger</span>
+        </div>
+        <div class="q" data-answer="the worst">
+          <span class="num">6</span>
+          <span>This is <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="bad">bad</option><option value="worse">worse</option><option value="the worst">the worst</option></select></span>
+          <span class="answer">the worst</span>
+        </div>
+        <div class="q" data-answer="the best">
+          <span class="num">7</span>
+          <span>She is <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="good">good</option><option value="better">better</option><option value="the best">the best</option></select></span>
+          <span class="answer">the best</span>
+        </div>
+        <div class="q" data-answer="the most exciting">
+          <span class="num">8</span>
+          <span>That was <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="exciting">exciting</option><option value="more exciting">more exciting</option><option value="the most exciting">the most exciting</option></select></span>
+          <span class="answer">the most exciting</span>
+        </div>
+
+      <div class="btn-row">
+        <button type="button" class="check">Check Answers</button>
+        <button type="button" class="reset">Reset</button>
+        <span class="score"></span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide" data-slide="4" style="background-image:var(--bg-image-4);">
+  <div class="content">
+    <span class="section-badge badge-accent">Topic 2 of 4</span>
+    <h2>Articles</h2>
+    <p>English has three choices: <b>a</b>, <b>an</b>, and <b>the</b> &mdash; plus <b>no article at all</b>. Most mistakes come from leaving an article out, not from adding a wrong one.</p>
+    <div class="cue-card">
+      <h4>a / an</h4>
+      <ul>
+        <li>Singular countable noun, first mention, one of many: <b>a</b> player, <b>an</b> goal</li>
+        <li>Use <b>an</b> before a vowel SOUND: <b>an</b> hour, <b>an</b> honour, <b>a</b> university</li>
+      </ul>
+    </div>
+    <div class="cue-card">
+      <h4>the</h4>
+      <ul>
+        <li>Both people know which one: <b>The</b> referee showed him a yellow card.</li>
+        <li>Second mention: We saw a goal. <b>The</b> goal was brilliant.</li>
+        <li>Only one exists, or a superlative: <b>the</b> sun, <b>the</b> best player in <b>the</b> league</li>
+      </ul>
+    </div>
+    <div class="cue-card">
+      <h4>no article (zero article)</h4>
+      <ul>
+        <li>Plural or uncountable, talking in general: <b>&mdash;</b> football boots, <b>&mdash;</b> football</li>
+        <li>Names of sports, games, languages: play <b>&mdash;</b> football, speak <b>&mdash;</b> English</li>
+        <li>Most names of people, cities, countries, clubs: <b>&mdash;</b> London, <b>&mdash;</b> Real Madrid</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="slide" data-slide="5" style="background-image:var(--bg-image-5);">
+  <div class="content">
+    <span class="section-badge badge-accent">Exercise 2</span>
+    <div class="exercise">
+      <h3>Articles</h3>
+      <p class="instr">Write <b>a</b>, <b>an</b>, <b>the</b>, or <b>&mdash;</b> for no article.</p>
+        <div class="q" data-answer="a">
+          <span class="num">1</span>
+          <span>He is &nbsp;&mdash;&nbsp; very good player. <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="&mdash;">&mdash;</option></select></span>
+          <span class="answer">a</span>
+        </div>
+        <div class="q" data-answer="The">
+          <span class="num">2</span>
+          <span>&mdash;&mdash;&nbsp; ball is in the back of the net. <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="&mdash;">&mdash;</option></select></span>
+          <span class="answer">The</span>
+        </div>
+        <div class="q" data-answer="&mdash;">
+          <span class="num">3</span>
+          <span>I play &nbsp;&mdash;&nbsp; football every Saturday. <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="&mdash;">&mdash;</option></select></span>
+          <span class="answer">&mdash;</span>
+        </div>
+        <div class="q" data-answer="a">
+          <span class="num">4</span>
+          <span>She scored &nbsp;&mdash;&nbsp; goal in the final minute. <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="&mdash;">&mdash;</option></select></span>
+          <span class="answer">a</span>
+        </div>
+        <div class="q" data-answer="&mdash;">
+          <span class="num">5</span>
+          <span>We watched the match on &nbsp;&mdash;&nbsp; television last night. <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="&mdash;">&mdash;</option></select></span>
+          <span class="answer">&mdash;</span>
+        </div>
+        <div class="q" data-answer="The">
+          <span class="num">6</span>
+          <span>&mdash;&mdash;&nbsp; referee showed him a yellow card. <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="&mdash;">&mdash;</option></select></span>
+          <span class="answer">The</span>
+        </div>
+        <div class="q" data-answer="the">
+          <span class="num">7</span>
+          <span>He is &nbsp;&mdash;&nbsp; best striker in the league. <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="&mdash;">&mdash;</option></select></span>
+          <span class="answer">the</span>
+        </div>
+        <div class="q" data-answer="an">
+          <span class="num">8</span>
+          <span>It was &nbsp;&mdash;&nbsp; honour to meet the players. <select class="blank"><option value="" selected disabled>&mdash; choose &mdash;</option><option value="a">a</option><option value="an">an</option><option value="the">the</option><option value="&mdash;">&mdash;</option></select></span>
+          <span class="answer">an</span>
+        </div>
+
+      <p class="sort-game-title">Sort the sentences: tap a sentence, then tap again to change its article.</p>
+      <div class="sort-game" data-cats="a / an|the|no article">
+        <div class="sort-item" data-answer="a / an">He is ___ very good player.<span class="pick-label">&mdash; tap to choose &mdash;</span></div>
+        <div class="sort-item" data-answer="the">___ ball is in the back of the net.<span class="pick-label">&mdash; tap to choose &mdash;</span></div>
+        <div class="sort-item" data-answer="no article">I play ___ football every Saturday.<span class="pick-label">&mdash; tap to choose &mdash;</span></div>
+        <div class="sort-item" data-answer="a / an">She scored ___ goal in the final minute.<span class="pick-label">&mdash; tap to choose &mdash;</span></div>
+        <div class="sort-item" data-answer="no article">We watched it on ___ television.<span class="pick-label">&mdash; tap to choose &mdash;</span></div>
+        <div class="sort-item" data-answer="the">___ referee showed him a yellow card.<span class="pick-label">&mdash; tap to choose &mdash;</span></div>
+        <div class="sort-item" data-answer="the">He is ___ best striker in the league.<span class="pick-label">&mdash; tap to choose &mdash;</span></div>
+        <div class="sort-item" data-answer="a / an">It was ___ honour to meet the players.<span class="pick-label">&mdash; tap to choose &mdash;</span></div>
+      </div>
+      <div class="btn-row">
+        <button type="button" class="check">Check Answers</button>
+        <button type="button" class="reset">Reset</button>
+        <span class="score"></span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide" data-slide="6" style="background-image:var(--bg-image-6);">
+  <div class="content">
+    <span class="section-badge badge-accent">Topic 3 of 4</span>
+    <h2>Will / Going to</h2>
+    <p>Both talk about the future, but they do different jobs. The exam loves to test the difference.</p>
+    <div class="cue-card">
+      <h4>will</h4>
+      <ul>
+        <li>A decision made <b>at the moment</b>: The phone is ringing &mdash; I <b>will</b> answer it.</li>
+        <li>A prediction with <b>no evidence</b>: I think our team <b>will</b> win.</li>
+        <li>A promise or an offer: I <b>won't</b> tell anyone. I <b>will</b> carry that for you.</li>
+      </ul>
+    </div>
+    <div class="cue-card">
+      <h4>going to</h4>
+      <ul>
+        <li>A plan or intention made <b>before</b> now: We <b>are going to</b> watch the final at my house.</li>
+        <li>A prediction <b>with evidence</b>: Look at those clouds &mdash; it <b>is going to</b> rain.</li>
+      </ul>
+    </div>
+    <div class="cue-card">
+      <h4>Quick test</h4>
+      <ul>
+        <li>Did you decide just now? &rarr; <b>will</b></li>
+        <li>Did you plan it earlier? &rarr; <b>going to</b></li>
+        <li>Can you see it happening? &rarr; <b>going to</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="slide" data-slide="7" style="background-image:var(--bg-image-7);">
+  <div class="content">
+    <span class="section-badge badge-accent">Exercise 3</span>
+    <div class="exercise">
+      <h3>Will or going to</h3>
+      <p class="instr">Write the correct future form.</p>
+        <div class="q" data-answer="will/'ll/ll">
+          <span class="num">1</span>
+          <span>The phone is ringing. I &mdash;&mdash;&mdash; answer it. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">will/'ll/ll</span>
+        </div>
+        <div class="q" data-answer="is going to">
+          <span class="num">2</span>
+          <span>Look at those black clouds &mdash; it &mdash;&mdash;&mdash; rain during the match. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">is going to</span>
+        </div>
+        <div class="q" data-answer="will/'ll/ll">
+          <span class="num">3</span>
+          <span>I think our team &mdash;&mdash;&mdash; win the cup this year. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">will/'ll/ll</span>
+        </div>
+        <div class="q" data-answer="are going to">
+          <span class="num">4</span>
+          <span>We &mdash;&mdash;&mdash; watch the final at my house. We already have the tickets. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">are going to</span>
+        </div>
+        <div class="q" data-answer="won't/wont/will not">
+          <span class="num">5</span>
+          <span>Don't worry, I &mdash;&mdash;&mdash; tell anyone your secret. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">won't/wont/will not</span>
+        </div>
+        <div class="q" data-answer="is going to">
+          <span class="num">6</span>
+          <span>She &mdash;&mdash;&mdash; join the academy next season. Her parents already signed the papers. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">is going to</span>
+        </div>
+        <div class="q" data-answer="are going to">
+          <span class="num">7</span>
+          <span>They &mdash;&mdash;&mdash; build a new stadium. The plans are finished. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">are going to</span>
+        </div>
+        <div class="q" data-answer="won't/wont/will not">
+          <span class="num">8</span>
+          <span>I promise I &mdash;&mdash;&mdash; be late again tomorrow. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">won't/wont/will not</span>
+        </div>
+
+      <div class="btn-row">
+        <button type="button" class="check">Check Answers</button>
+        <button type="button" class="reset">Reset</button>
+        <span class="score"></span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide" data-slide="8" style="background-image:var(--bg-image-8);">
+  <div class="content">
+    <span class="section-badge badge-accent">Topic 4 of 4</span>
+    <h2>Present Simple vs Continuous</h2>
+    <p>The difference is <b>when</b>, not <b>how</b>. Simple = always, facts, routines. Continuous = now, temporary, changing.</p>
+    <div class="cue-card">
+      <h4>Present simple</h4>
+      <ul>
+        <li>Habits and routines: He <b>plays</b> football every weekend.</li>
+        <li>Facts and permanent situations: She <b>knows</b> every player.</li>
+        <li>Timetables: The match <b>starts</b> at eight.</li>
+        <li>Time words: <em>always, usually, every day, on Sundays</em></li>
+      </ul>
+    </div>
+    <div class="cue-card">
+      <h4>Present continuous</h4>
+      <ul>
+        <li>Happening now: Listen! The crowd <b>is singing</b>.</li>
+        <li>Temporary situations: They <b>are training</b> for the final this week.</li>
+        <li>Changing situations: The team <b>is getting</b> better.</li>
+        <li>Time words: <em>now, at the moment, right now, these days</em></li>
+      </ul>
+    </div>
+    <div class="cue-card">
+      <h4>Stative verbs</h4>
+      <ul>
+        <li>Verbs like <em>know, like, want, need, love, have</em> (possession) describe a state, not an action.</li>
+        <li>They stay in the <b>simple</b> form: I <b>don't like</b> losing. (NOT I am not liking losing)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="slide" data-slide="9" style="background-image:var(--bg-image-9);">
+  <div class="content">
+    <span class="section-badge badge-accent">Exercise 4</span>
+    <div class="exercise">
+      <h3>Present simple or continuous</h3>
+      <p class="instr">Put the verb in brackets into the correct tense.</p>
+        <div class="q" data-answer="plays">
+          <span class="num">1</span>
+          <span>He &mdash;&mdash;&mdash; (play) football every weekend. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">plays</span>
+        </div>
+        <div class="q" data-answer="is singing">
+          <span class="num">2</span>
+          <span>Listen! The crowd &mdash;&mdash;&mdash; (sing) our song. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">is singing</span>
+        </div>
+        <div class="q" data-answer="knows">
+          <span class="num">3</span>
+          <span>She &mdash;&mdash;&mdash; (know) every player in the squad. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">knows</span>
+        </div>
+        <div class="q" data-answer="are training">
+          <span class="num">4</span>
+          <span>At the moment they &mdash;&mdash;&mdash; (train) for the cup final. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">are training</span>
+        </div>
+        <div class="q" data-answer="boils">
+          <span class="num">5</span>
+          <span>Water &mdash;&mdash;&mdash; (boil) at 100 degrees. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">boils</span>
+        </div>
+        <div class="q" data-answer="am watching">
+          <span class="num">6</span>
+          <span>I &mdash;&mdash;&mdash; (watch) the match right now. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">am watching</span>
+        </div>
+        <div class="q" data-answer="doesn't like/doesnt like/does not like">
+          <span class="num">7</span>
+          <span>He &mdash;&mdash;&mdash; (not / like) losing. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">doesn't like/doesnt like/does not like</span>
+        </div>
+        <div class="q" data-answer="is getting">
+          <span class="num">8</span>
+          <span>The team &mdash;&mdash;&mdash; (get) better every single week. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">is getting</span>
+        </div>
+
+      <div class="btn-row">
+        <button type="button" class="check">Check Answers</button>
+        <button type="button" class="reset">Reset</button>
+        <span class="score"></span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide" data-slide="10" style="background-image:var(--bg-image-10);">
+  <div class="content">
+    <span class="section-badge badge-accent">Exercise 5</span>
+    <div class="exercise">
+      <h3>Mixed exam practice</h3>
+      <p class="instr">All four topics together. Answer every question.</p>
+        <div class="q" data-answer="taller">
+          <span class="num">1</span>
+          <span>Our captain is &mdash;&mdash;&mdash; (tall) than their goalkeeper. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">taller</span>
+        </div>
+        <div class="q" data-answer="am going">
+          <span class="num">2</span>
+          <span>I &mdash;&mdash;&mdash; (go) to the stadium tomorrow &mdash; I have the tickets. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">am going</span>
+        </div>
+        <div class="q" data-answer="is reading">
+          <span class="num">3</span>
+          <span>She &mdash;&mdash;&mdash; (read) the match report at the moment. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">is reading</span>
+        </div>
+        <div class="q" data-answer="The">
+          <span class="num">4</span>
+          <span>&mdash;&mdash;&nbsp; referee blew the whistle for half-time. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">The</span>
+        </div>
+        <div class="q" data-answer="will rain/'ll rain">
+          <span class="num">5</span>
+          <span>I think it &mdash;&mdash;&mdash; (rain) during the second half. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">will rain/'ll rain</span>
+        </div>
+        <div class="q" data-answer="plays">
+          <span class="num">6</span>
+          <span>He &mdash;&mdash;&mdash; (play) for our local club on Sundays. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">plays</span>
+        </div>
+        <div class="q" data-answer="amazing">
+          <span class="num">7</span>
+          <span>What an &mdash;&mdash;&mdash; (amaze) goal that was! <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">amazing</span>
+        </div>
+        <div class="q" data-answer="is running">
+          <span class="num">8</span>
+          <span>Look! The striker &mdash;&mdash;&mdash; (run) towards the goal. <input type="text" class="blank" placeholder="your answer" autocomplete="off" /></span>
+          <span class="answer">is running</span>
+        </div>
+
+      <div class="btn-row">
+        <button type="button" class="check">Check Answers</button>
+        <button type="button" class="reset">Reset</button>
+        <span class="score"></span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide" data-slide="11" style="background-image:var(--bg-image-11);">
+  <div class="content">
+    <span class="section-badge badge-accent2">Vocabulary</span>
+    <h2>Words for match day</h2>
+    <p>Click any underlined word for its definition and an example.</p>
+    <div class="cue-card">
+      <h4>In the stadium</h4>
+      <ul>
+        <li>We walked onto the <span class="vocab-word level-b1" data-def="the marked field where a football match is played" data-example="The pitch looked perfect after the rain.">pitch</span> two hours before kick-off.</li>
+        <li>The <span class="vocab-word level-b1" data-def="the player whose main job is to score goals" data-example="Our striker has scored in five games in a row.">striker</span> was already warming up.</li>
+        <li>The <span class="vocab-word level-b1" data-def="the person who makes sure the players follow the rules" data-example="The referee stopped the game for a foul.">referee</span> checked his watch twice.</li>
+        <li>Every <span class="vocab-word level-b1" data-def="the player who protects their own goal and stops the other team scoring" data-example="Their best defender was injured in the first half.">defender</span> ran back to cover.</li>
+      </ul>
+    </div>
+    <div class="cue-card">
+      <h4>Talking about the game</h4>
+      <ul>
+        <li>It was a real <span class="vocab-word level-b1" data-def="a game won by a team that was losing earlier" data-example="It was an amazing comeback from two goals down.">comeback</span> after half-time.</li>
+        <li>Everyone expected us to lose &mdash; we were the <span class="vocab-word level-b1" data-def="the team or player that is expected to lose" data-example="Nobody gave the underdog a chance.">underdog</span>.</li>
+        <li>The coach made a <span class="vocab-word level-b1" data-def="done to gain an advantage over the other team" data-example="It was a very tactical change in the second half.">tactical</span> change in the second half.</li>
+        <li>Ninety minutes of football is <span class="vocab-word level-b1" data-def="making you feel extremely tired" data-example="The match was exhausting but worth it.">exhausting</span>.</li>
+      </ul>
+    </div>
+    <div class="cue-card">
+      <h4>Useful language for the exam</h4>
+      <ul>
+        <li>Giving an opinion: <em>I think that...</em> &nbsp;|&nbsp; <em>In my opinion...</em> &nbsp;|&nbsp; <em>I believe that...</em></li>
+        <li>Agreeing: <em>I agree, because...</em> &nbsp;|&nbsp; <em>That is true, but...</em></li>
+        <li>Disagreeing politely: <em>I take your point, however...</em></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="slide" data-slide="12" style="background-image:var(--bg-image-12);">
+  <div class="content">
+    <span class="section-badge badge-accent2">Key Takeaways</span>
+    <h2>What we practised</h2>
+    <ul class="goals-list">
+      <li>Adjectives &mdash; position, -ed / -ing, comparatives and superlatives</li>
+      <li>Articles &mdash; a / an / the / no article</li>
+      <li>Will and going to &mdash; predictions, plans, promises and offers</li>
+      <li>Present simple and continuous &mdash; facts and routines versus now and temporary</li>
+      <li>Mixed exam practice across all four topics</li>
+    </ul>
+    <div class="cue-card" style="margin-top:1em;">
+      <h4>One last thing before tomorrow</h4>
+      <ul>
+        <li>Press <b>Reset</b> on the mixed practice slide and try the eight questions again without looking.</li>
+        <li>Finish with the vocabulary slide &mdash; click every underlined word once.</li>
+      </ul>
+    </div>
+    <button class="mark-complete-btn" id="markCompleteBtn" onclick="toggleMarkComplete(this)">Mark as Completed</button>
+  </div>
+</section>
+
+<!-- NAVIGATION -->
+<div class="nav">
+  <button id="prevBtn">&larr; Previous</button>
+  <span class="slide-counter" id="slideCounter">1 / 13</span>
+  <button id="nextBtn">Next &rarr;</button>
+</div>
+
+<script>
+
+var audioCtx = null;
+var reverbNode = null;
+var soundEnabled = true;
+var deckSlug = 'match-day-grammar';
+
+var THEMES = [
+  {name:'Deep Ocean',accent:'#22d3ee',accentRgb:'34,211,238',accent2:'#a78bfa',bg:'#0a1228',text:'#e2e8f0'},
+  {name:'Evergreen',accent:'#34d399',accentRgb:'52,211,153',accent2:'#4ade80',bg:'#0c2416',text:'#d1fae5'},
+  {name:'Coral',accent:'#fb7185',accentRgb:'251,113,133',accent2:'#f472b6',bg:'#2a1018',text:'#fce7f3'},
+  {name:'Orchid',accent:'#c4b5fd',accentRgb:'196,181,253',accent2:'#a78bfa',bg:'#1f1028',text:'#ede9fe'},
+  {name:'Ember',accent:'#fbbf24',accentRgb:'251,191,36',accent2:'#fb923c',bg:'#2a1a08',text:'#fef3c7'},
+  {name:'Nebula',accent:'#a78bfa',accentRgb:'167,139,250',accent2:'#c084fc',bg:'#160b2b',text:'#ede9fe'},
+  {name:'Glacier',accent:'#67e8f9',accentRgb:'103,232,249',accent2:'#22d3ee',bg:'#081828',text:'#cffafe'},
+  {name:'Dune',accent:'#d4a574',accentRgb:'212,165,116',accent2:'#e7c9a9',bg:'#241a14',text:'#f5e6d3'},
+  {name:'Sterling',accent:'#9ca3af',accentRgb:'156,163,175',accent2:'#d1d5db',bg:'#18181c',text:'#e5e7eb'},
+  {name:'Sky',accent:'#7dd3fc',accentRgb:'125,211,252',accent2:'#38bdf8',bg:'#0a1a32',text:'#e0f2fe'},
+  {name:'Aurora',accent:'#a3e635',accentRgb:'163,230,53',accent2:'#84cc16',bg:'#0f240c',text:'#ecfccb'},
+  {name:'Pearl',accent:'#a2a7a5',accentRgb:'162,167,165',accent2:'#e2dadb',bg:'#6d696a',text:'#e2dadb'}
+];
+var currentThemeIndex = 0;
+
+function cycleTheme() {
+  currentThemeIndex = (currentThemeIndex + 1) % THEMES.length;
+  applyThemeByIndex(currentThemeIndex);
+}
+
+function applyThemeByIndex(idx) {
+  var t = THEMES[idx];
+  var root = document.documentElement;
+  root.style.setProperty('--accent', t.accent);
+  root.style.setProperty('--accent-rgb', t.accentRgb);
+  root.style.setProperty('--accent2', t.accent2);
+  root.style.setProperty('--bg-deep', t.bg);
+    root.style.setProperty('--bg-deep-rgb', hexToRgb(t.bg));
+  if (t.text) root.style.setProperty('--text', t.text);
+  root.style.setProperty('--bg-overlay-from', 'rgba('+hexToRgb(t.bg)+',.88)');
+  root.style.setProperty('--bg-overlay-mid', 'rgba('+hexToRgb(t.bg)+',.62)');
+  root.style.setProperty('--bg-overlay-to', 'rgba('+hexToRgb(t.bg)+',.28)');
+  if (t.name === 'Pearl') {
+    document.querySelectorAll('.content').forEach(function(el) { el.style.background = 'rgba(255,255,255,0.95)'; el.style.borderColor = '#a2a7a5'; });
+    document.querySelectorAll('.reveal-btn, .theme-cycle, .sound-toggle, .home-link, .mark-complete-btn, .timer-btn').forEach(function(el) { el.style.background = 'rgba(255,255,255,0.95)'; el.style.borderColor = '#a2a7a5'; el.style.color = '#6d696a'; });
+    document.querySelectorAll('h1, h2, h3').forEach(function(el) { el.style.color = '#6d696a'; });
+  } else {
+    document.querySelectorAll('.content').forEach(function(el) { el.style.background = ''; el.style.borderColor = ''; });
+    document.querySelectorAll('.reveal-btn, .theme-cycle, .sound-toggle, .home-link, .mark-complete-btn, .timer-btn').forEach(function(el) { el.style.background = ''; el.style.borderColor = ''; el.style.color = ''; });
+    document.querySelectorAll('h1, h2, h3').forEach(function(el) { el.style.color = ''; });
+  }
+  var btn = document.getElementById('themeCycleBtn');
+  if (btn) {
+    var nl = btn.querySelector('.theme-name'); var dp = btn.querySelector('.theme-dot-preview');
+    if (nl) nl.textContent = t.name; if (dp) dp.style.background = t.accent;
+  }
+  try { localStorage.setItem('ielts-theme-'+deckSlug, idx); } catch(e) {}
+}
+
+function hexToRgb(h){h=h.replace('#','');return parseInt(h.substr(0,2),16)+','+parseInt(h.substr(2,2),16)+','+parseInt(h.substr(4,2),16)}
+
+function restoreTheme() {
+  try {
+    var s = localStorage.getItem('ielts-theme-'+deckSlug);
+    if (s !== null) { var i = parseInt(s); if (!isNaN(i) && i >= 0 && i < THEMES.length) currentThemeIndex = i; }
+  } catch(e) {}
+}
+
+function toggleSound() {
+  soundEnabled = !soundEnabled;
+  var btn = document.getElementById('soundToggleBtn');
+  if (btn) { btn.textContent = soundEnabled ? 'Sound: ON' : 'Sound: OFF'; btn.classList.toggle('off', !soundEnabled); }
+  try { localStorage.setItem('ielts-sound-'+deckSlug, soundEnabled ? '1' : '0'); } catch(e) {}
+}
+
+function restoreSound() {
+  try {
+    var s = localStorage.getItem('ielts-sound-'+deckSlug);
+    if (s === '0') { soundEnabled = false; var btn = document.getElementById('soundToggleBtn'); if (btn) { btn.textContent = 'Sound: OFF'; btn.classList.add('off'); } }
+  } catch(e) {}
+}
+
+function ensureAudio() {
+  if (!audioCtx) {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    var rate = audioCtx.sampleRate;
+    var length = rate * 1.2;
+    var impulse = audioCtx.createBuffer(2, length, rate);
+    for (var ch = 0; ch < 2; ch++) {
+      var data = impulse.getChannelData(ch);
+      for (var i = 0; i < length; i++) { data[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / length, 2.5); }
+    }
+    reverbNode = audioCtx.createConvolver();
+    reverbNode.buffer = impulse;
+    var reverbGain = audioCtx.createGain();
+    reverbGain.gain.value = 0.4;
+    reverbNode.connect(reverbGain);
+    reverbGain.connect(audioCtx.destination);
+  }
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}
+
+function playSwish(direction) {
+  if (!soundEnabled) return;
+  ensureAudio();
+  var now = audioCtx.currentTime;
+  var bufferSize = Math.floor(audioCtx.sampleRate * 0.18);
+  var buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+  var data = buffer.getChannelData(0);
+  for (var i = 0; i < bufferSize; i++) { var env = Math.sin((i / bufferSize) * Math.PI); data[i] = (Math.random() * 2 - 1) * env; }
+  var src = audioCtx.createBufferSource(); src.buffer = buffer;
+  var filter = audioCtx.createBiquadFilter(); filter.type = 'bandpass'; filter.Q.value = 8;
+  if (direction === 'forward') { filter.frequency.setValueAtTime(800, now); filter.frequency.exponentialRampToValueAtTime(4000, now + 0.15); }
+  else { filter.frequency.setValueAtTime(4000, now); filter.frequency.exponentialRampToValueAtTime(800, now + 0.15); }
+  var gain = audioCtx.createGain();
+  gain.gain.setValueAtTime(0, now); gain.gain.linearRampToValueAtTime(0.12, now + 0.02); gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+  var dryGain = audioCtx.createGain(); dryGain.gain.value = 0.6;
+  var wetGain = audioCtx.createGain(); wetGain.gain.value = 0.4;
+  src.connect(filter); filter.connect(gain); gain.connect(dryGain); gain.connect(wetGain);
+  dryGain.connect(audioCtx.destination); wetGain.connect(reverbNode);
+  src.start(now); src.stop(now + 0.2);
+  var osc = audioCtx.createOscillator(); osc.type = 'sine';
+  var oscGain = audioCtx.createGain();
+  if (direction === 'forward') { osc.frequency.setValueAtTime(600, now); osc.frequency.exponentialRampToValueAtTime(1200, now + 0.1); }
+  else { osc.frequency.setValueAtTime(1200, now); osc.frequency.exponentialRampToValueAtTime(600, now + 0.1); }
+  oscGain.gain.setValueAtTime(0, now); oscGain.gain.linearRampToValueAtTime(0.04, now + 0.02); oscGain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+  osc.connect(oscGain); oscGain.connect(audioCtx.destination);
+  osc.start(now); osc.stop(now + 0.15);
+}
+
+function playDing() {
+  if (!soundEnabled) return;
+  ensureAudio();
+  var now = audioCtx.currentTime;
+  var osc = audioCtx.createOscillator(); osc.type = 'sine'; osc.frequency.setValueAtTime(880, now);
+  var gain = audioCtx.createGain();
+  gain.gain.setValueAtTime(0, now); gain.gain.linearRampToValueAtTime(0.15, now + 0.02); gain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+  osc.connect(gain); gain.connect(audioCtx.destination);
+  osc.start(now); osc.stop(now + 0.4);
+}
+
+function playBeep(pitch) {
+  if (!soundEnabled) return;
+  ensureAudio();
+  var now = audioCtx.currentTime;
+  var osc = audioCtx.createOscillator(); osc.type = 'sine'; osc.frequency.setValueAtTime(pitch || 880, now);
+  var gain = audioCtx.createGain();
+  gain.gain.setValueAtTime(0, now); gain.gain.linearRampToValueAtTime(0.12, now + 0.01); gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+  osc.connect(gain); gain.connect(audioCtx.destination);
+  osc.start(now); osc.stop(now + 0.25);
+}
+
+function positionTooltip(el) {
+  var tooltip = el.querySelector('.vocab-tooltip');
+  if (!tooltip) return;
+  var rect = el.getBoundingClientRect();
+  var ttRect = tooltip.getBoundingClientRect();
+  var top = rect.top - ttRect.height - 10;
+  var left = rect.left + rect.width / 2;
+  if (top < 10) top = rect.bottom + 10;
+  if (left - ttRect.width / 2 < 10) left = ttRect.width / 2 + 10;
+  if (left + ttRect.width / 2 > window.innerWidth - 10) left = window.innerWidth - ttRect.width / 2 - 10;
+  tooltip.style.top = top + 'px';
+  tooltip.style.left = left + 'px';
+  tooltip.style.transform = 'translateX(-50%)';
+}
+
+function toggleTooltip(el) {
+  document.querySelectorAll('.vocab-word.active').forEach(function(w) { if (w !== el) w.classList.remove('active'); });
+  var wasActive = el.classList.contains('active');
+  el.classList.toggle('active');
+  if (!wasActive) positionTooltip(el);
+}
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.vocab-word')) { document.querySelectorAll('.vocab-word.active').forEach(function(w) { w.classList.remove('active'); }); }
+});
+
+function initVocabTooltips() {
+  document.querySelectorAll('.vocab-word').forEach(function(w) {
+    if (w.querySelector('.vocab-tooltip')) return;
+    var def = w.getAttribute('data-def');
+    var pos = w.getAttribute('data-pos') || 'word';
+    var example = w.getAttribute('data-example') || '';
+    var level = w.classList.contains('level-c1') ? 'C1' : (w.classList.contains('level-b2') ? 'B2' : 'B1');
+    var tip = document.createElement('span');
+    tip.className = 'vocab-tooltip';
+    tip.innerHTML = '<span class="level-badge level-'+level.toLowerCase()+'">'+level+' '+pos+'</span><span class="def-text">'+def+'</span>'+(example ? '<span class="example-text">&ldquo;'+example+'&rdquo;</span>' : '');
+    w.appendChild(tip);
+    w.onclick = function(e) { e.stopPropagation(); toggleTooltip(w); };
+  });
+}
+initVocabTooltips();
+
+function revealAnswer(btn) {
+  var answer = btn.nextElementSibling;
+  if (!answer || !answer.classList.contains('model-answer')) return;
+  if (answer.classList.contains('hidden-answer')) {
+    answer.classList.remove('hidden-answer');
+    btn.textContent = 'Hide Answer';
+    btn.classList.add('revealed');
+  } else {
+    answer.classList.add('hidden-answer');
+    btn.textContent = btn.textContent.includes('Follow-up') ? 'Reveal Follow-up Answer' : 'Reveal Model Answer';
+    btn.classList.remove('revealed');
+  }
+}
+
+function toggleMarkComplete(btn) {
+  var progress = JSON.parse(localStorage.getItem('ielts-progress') || '{}');
+  if (btn.classList.contains('completed')) {
+    btn.classList.remove('completed');
+    btn.textContent = 'Mark Complete';
+    if (progress[deckSlug]) progress[deckSlug].completed = false;
+  } else {
+    btn.classList.add('completed');
+    btn.textContent = 'Completed!';
+    if (!progress[deckSlug]) progress[deckSlug] = {};
+    progress[deckSlug].completed = true;
+    progress[deckSlug].date = new Date().toISOString().split('T')[0];
+  }
+  localStorage.setItem('ielts-progress', JSON.stringify(progress));
+}
+
+(function restoreProgress() {
+  var progress = JSON.parse(localStorage.getItem('ielts-progress') || '{}');
+  var btn = document.getElementById('markCompleteBtn');
+  if (btn && progress[deckSlug] && progress[deckSlug].completed) { btn.classList.add('completed'); btn.textContent = 'Completed!'; }
+})();
+
+/* TIMERS */
+var p1Seconds = 270, p1Running = false, p1Interval = null;
+var prepSeconds = 60, prepRunning = false, prepInterval = null;
+var talkSeconds = 120, talkRunning = false, talkInterval = null;
+var p3Seconds = 270, p3Running = false, p3Interval = null;
+
+function fmt(secs) {
+  var m = Math.floor(secs / 60), s = secs % 60;
+  return m + ':' + (s < 10 ? '0' + s : s);
+}
+
+function updateTimerBadge(el, secs, running, warning) {
+  el.textContent = '\u23F1 ' + fmt(secs);
+  el.classList.toggle('running', running);
+  el.classList.toggle('warning', warning && secs <= 30 && secs > 10);
+  if (secs <= 10) { el.classList.remove('warning'); el.classList.add('danger'); }
+  else { el.classList.remove('danger'); }
+}
+
+function togglePart1Timer() {
+  var el = document.getElementById('p1Timer');
+  if (p1Running) {
+    clearInterval(p1Interval); p1Running = false; updateTimerBadge(el, p1Seconds, false, true);
+  } else {
+    p1Running = true; updateTimerBadge(el, p1Seconds, true, true);
+    p1Interval = setInterval(function() {
+      p1Seconds--;
+      updateTimerBadge(el, p1Seconds, true, true);
+      if (p1Seconds === 30) playBeep(600);
+      if (p1Seconds <= 0) { clearInterval(p1Interval); p1Running = false; playBeep(300); el.textContent = '\u23F1 Time up'; el.classList.remove('running','warning'); }
+    }, 1000);
+  }
+}
+function resetPart1Timer() { clearInterval(p1Interval); p1Running = false; p1Seconds = 270; updateTimerBadge(document.getElementById('p1Timer'), 270, false, true); }
+
+function togglePrepTimer() {
+  var el = document.getElementById('prepTimer');
+  if (prepRunning) {
+    clearInterval(prepInterval); prepRunning = false; updateTimerBadge(el, prepSeconds, false, true);
+  } else {
+    prepRunning = true; updateTimerBadge(el, prepSeconds, true, true);
+    prepInterval = setInterval(function() {
+      prepSeconds--;
+      updateTimerBadge(el, prepSeconds, true, true);
+      if (prepSeconds === 10) playBeep(600);
+      if (prepSeconds <= 0) { clearInterval(prepInterval); prepRunning = false; playBeep(300); el.textContent = '\u23F1 Time up'; el.classList.remove('running','warning'); }
+    }, 1000);
+  }
+}
+function resetPrepTimer() { clearInterval(prepInterval); prepRunning = false; prepSeconds = 60; updateTimerBadge(document.getElementById('prepTimer'), 60, false, true); }
+
+function toggleTalkTimer() {
+  var el = document.getElementById('talkTimer');
+  if (talkRunning) {
+    clearInterval(talkInterval); talkRunning = false; updateTimerBadge(el, talkSeconds, false, true);
+  } else {
+    talkRunning = true; updateTimerBadge(el, talkSeconds, true, true);
+    talkInterval = setInterval(function() {
+      talkSeconds--;
+      updateTimerBadge(el, talkSeconds, true, true);
+      if (talkSeconds === 30) playBeep(600);
+      if (talkSeconds <= 0) { clearInterval(talkInterval); talkRunning = false; playBeep(300); el.textContent = '\u23F1 Time up'; el.classList.remove('running','warning'); }
+    }, 1000);
+  }
+}
+function resetTalkTimer() { clearInterval(talkInterval); talkRunning = false; talkSeconds = 120; updateTimerBadge(document.getElementById('talkTimer'), 120, false, true); }
+
+function togglePart3Timer() {
+  var el = document.getElementById('p3Timer');
+  if (p3Running) {
+    clearInterval(p3Interval); p3Running = false; updateTimerBadge(el, p3Seconds, false, true);
+  } else {
+    p3Running = true; updateTimerBadge(el, p3Seconds, true, true);
+    p3Interval = setInterval(function() {
+      p3Seconds--;
+      updateTimerBadge(el, p3Seconds, true, true);
+      if (p3Seconds === 30) playBeep(600);
+      if (p3Seconds <= 0) { clearInterval(p3Interval); p3Running = false; playBeep(300); el.textContent = '\u23F1 Time up'; el.classList.remove('running','warning'); }
+    }, 1000);
+  }
+}
+function resetPart3Timer() { clearInterval(p3Interval); p3Running = false; p3Seconds = 270; updateTimerBadge(document.getElementById('p3Timer'), 270, false, true); }
+
+
+/* EXERCISE ENGINE
+   One Check/Reset pair per slide handles both gap-fill questions (.q)
+   and categorise games (.sort-game). Check reveals every model answer. */
+function normalise(s){
+  return s.toLowerCase().replace(/'/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
+}
+function matchAnswer(given, expected){
+  var g = normalise(given), e = normalise(expected);
+  if (g === e) return true;
+  return expected.split('/').some(function(a){ return normalise(a) === g; });
+}
+var SORT_HINT = '\u2014 tap to choose \u2014';
+function setupExercise(box){
+  var checkBtn = box.querySelector('.check');
+  var resetBtn = box.querySelector('.reset');
+  var scoreBox = box.querySelector('.score');
+  if (!checkBtn || !scoreBox) return;
+
+  /* categorise games: click cycles unassigned -> cat1 -> cat2 -> ... -> unassigned */
+  box.querySelectorAll('.sort-game').forEach(function(g){
+    var cats = (g.getAttribute('data-cats') || '').split('|');
+    g.querySelectorAll('.sort-item').forEach(function(it){
+      it.addEventListener('click', function(){
+        var cur = it.getAttribute('data-pick') || '';
+        var i = cats.indexOf(cur);
+        i = (i + 1) % (cats.length + 1);
+        var pick = (i === cats.length) ? '' : cats[i];
+        it.setAttribute('data-pick', pick);
+        var lbl = it.querySelector('.pick-label');
+        if (lbl) lbl.textContent = pick || SORT_HINT;
+        it.classList.remove('good','bad');
+      });
+    });
+  });
+
+  checkBtn.addEventListener('click', function(){
+    var total = 0, correct = 0;
+
+    box.querySelectorAll('.q').forEach(function(q){
+      var expected = q.getAttribute('data-answer');
+      var input = q.querySelector('select, input[type=text]');
+      if (!input) return;
+      var val = input.value.trim();
+      total++;
+      q.classList.remove('revealed');
+      input.classList.remove('correct','wrong');
+      q.querySelector('.num').classList.remove('good','bad');
+      if (!val) return;
+      var ok = matchAnswer(val, expected);
+      input.classList.add(ok ? 'correct' : 'wrong');
+      q.querySelector('.num').classList.add(ok ? 'good' : 'bad');
+      if (ok) correct++;
+    });
+
+    box.querySelectorAll('.sort-game .sort-item').forEach(function(it){
+      total++;
+      var pick = it.getAttribute('data-pick') || '';
+      if (!pick) return;
+      var ok = pick === it.getAttribute('data-answer');
+      it.classList.toggle('good', ok);
+      it.classList.toggle('bad', !ok);
+      if (ok) correct++;
+    });
+
+    box.querySelectorAll('.q').forEach(function(q){ q.classList.add('revealed'); });
+    scoreBox.textContent = correct + ' / ' + total;
+    if (correct === total && total > 0) {
+      try { localStorage.setItem('matchday-done-' + deckSlug, '1'); } catch(e) {}
+      playDing();
+    }
+  });
+
+  if (resetBtn) resetBtn.addEventListener('click', function(){
+    box.querySelectorAll('.q').forEach(function(q){
+      q.classList.remove('revealed');
+      q.querySelector('.num').classList.remove('good','bad');
+      var input = q.querySelector('select, input[type=text]');
+      input.value = '';
+      input.classList.remove('correct','wrong');
+      if (input.tagName === 'SELECT') input.selectedIndex = 0;
+    });
+    box.querySelectorAll('.sort-item').forEach(function(it){
+      it.setAttribute('data-pick','');
+      var lbl = it.querySelector('.pick-label');
+      if (lbl) lbl.textContent = SORT_HINT;
+      it.classList.remove('good','bad');
+    });
+    scoreBox.textContent = '';
+  });
+}
+document.querySelectorAll('.exercise').forEach(setupExercise);
+
+/* NAVIGATION */
+var slides = document.querySelectorAll('.slide');
+var current = 0;
+var prevBtn = document.getElementById('prevBtn');
+var nextBtn = document.getElementById('nextBtn');
+var slideCounter = document.getElementById('slideCounter');
+var progressBar = document.getElementById('progressBar');
+
+function update() {
+  slides.forEach(function(s, i) { s.classList.toggle('active', i === current); });
+  slideCounter.textContent = (current + 1) + ' / ' + slides.length;
+  progressBar.style.width = (((current + 1) / slides.length) * 100) + '%';
+}
+
+prevBtn.addEventListener('click', function() { if (current > 0) { current--; playSwish('back'); } update(); });
+nextBtn.addEventListener('click', function() { if (current < slides.length - 1) { current++; playSwish('forward'); } update(); });
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); if (current < slides.length - 1) { current++; playSwish('forward'); } update(); }
+  if (e.key === 'ArrowLeft') { e.preventDefault(); if (current > 0) { current--; playSwish('back'); } update(); }
+});
+
+restoreTheme();
+restoreSound();
+applyThemeByIndex(currentThemeIndex);
+update();
+</script>
+</body>
+</html>
