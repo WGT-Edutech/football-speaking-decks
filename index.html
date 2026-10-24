@@ -259,9 +259,6 @@ var DECKS = [
     var d = DECKS[i];
     if (!d) return;
     if (progress[d.slug] && progress[d.slug].completed) card.classList.add('done');
-    card.addEventListener('click', function (e) {
-      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-    });
   });
 })();
 </script>
